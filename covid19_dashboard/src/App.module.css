@@ -1,0 +1,8 @@
+body {
+  background-color: hsl(255, 250, 200, 0.8);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
