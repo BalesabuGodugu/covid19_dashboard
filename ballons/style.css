@@ -1,0 +1,54 @@
+
+body{
+    background-color: #00bcd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    height:100vh;
+    background-image: url('./sameer.jpg');
+    background-size: cover;
+}
+.heart{
+    height:50px;
+    width:50px;
+    background-color:purple;
+    position: absolute;
+    top:105vh;
+    left:0;
+    transform: translateY(0) rotate(-45deg);
+    animation:  fly 3s linear infinite;
+}
+.heart::after{
+    background:inherit;
+    border-radius: 50%;
+    content:'';
+    position: absolute;
+    top:-50%;
+    left:0;
+    height:100%;
+    width:100%;
+}
+.heart::before{
+    background:inherit;
+    border-radius: 50%;
+    content:'';
+    position: absolute;
+    top:0;
+    right:-50%;
+    height:100%;
+    width:100%;
+}
+@keyframes fly{
+    to{
+        transform: translateY(-105vh) rotate(-45deg);
+    }
+}
+h1 {
+
+   margin-left:40px;
+    z-index: 100;
+    position: relative;
+    color:yellow;
+}
+   
